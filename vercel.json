@@ -4,6 +4,14 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/api/proxy/(.*)",
+      "destination": "https://api.anychat.one/public/v1/$1"
+    },
+    {
+      "source": "/api/storage/(.*)",
+      "destination": "https://api.anychat.one/storage/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

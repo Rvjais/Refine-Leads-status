@@ -1,5 +1,5 @@
 const PROXY = '/api/proxy'
-const KEY = import.meta.env.VITE_API_KEY
+const KEY = import.meta.env.VITE_API_KEY || 'aORIThWI-WFaXiCOZLy_a-GnK3CWnwTOaupHyhbSW-9ONUIud-DXhBNCrCdEVeOa'
 
 async function apiRequest(endpoint, method = 'GET', body = null) {
   const url = `${PROXY}${endpoint}`
